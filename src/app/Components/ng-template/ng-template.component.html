@@ -1,0 +1,21 @@
+<div class="container mt-5" style="align-items: center; text-align: center;">
+    <div *ngIf="isLoggedIn; else notLoggedIn">
+        <h1> Welcome, User!</h1>
+       </div>
+       
+       <ng-template #notLoggedIn>
+         <h1>Please log in to continue.</h1>
+       </ng-template>
+       
+     
+       <button class="btn btn-outline-primary mt-2" (click)="changeValue()">Click Me</button>
+     <br>
+     <hr>
+</div>
+
+<h2>Summery</h2>
+<p>ng-template directive is used to define template fragment that are not displayed 
+ by default or initially but can be rendered programmatically or via structural directive.
+</p>
+<hr>
+
